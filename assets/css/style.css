@@ -27,6 +27,7 @@ header {
     color: #d8d8d8;
 }    
 
+/* my background picture */
 figure {
     height: 200px;
     width: 100%;
@@ -71,4 +72,15 @@ a {
 
 p {
     font-size: 16px;
+}
+
+/* footer section values, needs to be adjusted */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    font-family: monospace;
+    background-color: #313131;
+    color: #d8d8d8;
 }
