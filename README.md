@@ -6,5 +6,5 @@ This is the second homework assignment for UCF Coding bootcamp. The website was 
 
 [email me](mailto:johnahysong@gmail.com)
 
-[Live Link](Git
+[Live Link](https://johnatticus.github.io/John-H-Portfolio/)
 [Repo](https://github.com/johnatticus/John-H-Portfolio)
