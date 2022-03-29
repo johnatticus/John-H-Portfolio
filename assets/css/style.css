@@ -21,6 +21,7 @@ body {
 
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -41,14 +42,14 @@ figure {
 
 main {
     width: 90%;
-    padding: 15px;
     display: flex;
-
+    align-items: flex-start;
 }
 
 h1 {
     display: inline-block;
     font-size: 32px;
+    
 }
     
     /* changed to a class in h1. Not sure if correct */
@@ -86,6 +87,7 @@ p {
 /* footer section values, needs to be adjusted */
 footer {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 25px;
@@ -94,11 +96,39 @@ footer {
     color: #d8d8d8;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.aboutheader {
+    display: flex;
+    padding-right: 10px;
+    border-right: solid 5px #313131;
+    flex: 1 1 15%;
+
+}
+
+.bio {
+    justify-content: flex-start;
+    width: 75%;
+}
+
+.projectsheader {
+    display: flex;
+    padding-right: 10px;
+    border-right: solid 5px #313131;
+}
+
 .projects {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    flex-grow: 1;
 }
 .works {
     display: flex;
@@ -106,4 +136,17 @@ footer {
     justify-content: space-between;
     flex: 0 0 33.333%;
     max-width: 33.333%;
+}
+
+.contactheader {
+    display: flex;
+}
+
+.contact {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-grow: 1;
 }
