@@ -123,9 +123,6 @@ img {
     background-image: url("../images/me.jpg");
 }
 
-.mypicture figure {
-    background-image: url("../images/me.jpg");
-}
 .bio {
     justify-content: flex-start;
     padding-left: 20px;
