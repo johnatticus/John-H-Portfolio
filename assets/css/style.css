@@ -123,8 +123,10 @@ img {
 
 .about {
     display: flex;
+    flex-direction: row;
     padding: 10px;
-    flex: 1 1 15%;
+    width: 100%;
+    /* flex: 1 1 15%; */
 
 }
 
@@ -136,15 +138,23 @@ img {
     /* flex: 1 1 15%; */
 }
 
-.mypicture {
-    background-image: url("../images/me.jpg");
+.sectionheader h1 {
+    font-size: 24px;
 }
 
 .bio {
     justify-content: flex-start;
-    padding-left: 20px;
+    /* padding-left: 20px; */
+    margin-left: 20px;
     border-left: solid 5px #313131;
 
+}
+
+.bio p {
+    padding-left: 20px;
+}
+.mypicture {
+    background-image: url("../images/me.jpg");
 }
 
 /* .projectsheader {
@@ -159,9 +169,11 @@ img {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: flex-start;
     flex-grow: 1;
-    /* width: 80%; */
     padding-left: 20px;
+    /* width: 90%; */
+    margin-left: 20px;
     border-left: solid 5px #313131;
 }
 
@@ -215,6 +227,7 @@ img {
     flex-direction: row;
     align-items: center;
     flex-grow: 1;
+    margin-left: 20px;
 }
 .contact a {
     font-size: large;
@@ -253,13 +266,13 @@ img {
 
     .sectionheader, main {
         width: 100%;
-        border-bottom: 0;
+        /* border-bottom: 0; */
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
     }
 
-    .about, .bio {
+    .about, .bio, .contact, .contactlinks {
         width: 100%;
         border-bottom: 0;
         display: flex;
