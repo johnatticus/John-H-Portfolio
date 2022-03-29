@@ -138,6 +138,7 @@ img {
     flex-wrap: wrap;
     align-items: flex-start;
     flex-grow: 1;
+    width: 80%;
 }
 .works {
     display: flex;
