@@ -165,6 +165,12 @@ img {
     border-left: solid 5px #313131;
 }
 
+/* added opacity change when hovering over projects */
+.works a:hover,
+.bigworks a:hover {
+    opacity: 50%;
+}
+
 .works {
     display: flex;
     flex-wrap: wrap;
@@ -175,7 +181,6 @@ img {
 }
 
 .works img {
-    max-width: 50%;
     height: 200px;
     margin: 2px;
     padding: 0 6px;
