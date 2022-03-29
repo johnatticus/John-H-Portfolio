@@ -43,6 +43,7 @@ figure {
 main {
     display: flex;
     align-items: flex-start;
+    height: 100vh;
 }
 
 h1 {
@@ -108,15 +109,17 @@ img {
 }
 .about {
     display: flex;
-    padding-right: 10px;
+    padding: 10px;
     flex: 1 1 15%;
+
 }
 
 .sectionheader {
     display: flex;
-    padding-right: 10px;
-    border-right: solid 5px #313131;
-    flex: 1 1 15%;
+    padding-right: 25px;
+    /* border-right: solid 5px #313131; */
+    width: 10%;
+    /* flex: 1 1 15%; */
 }
 
 .mypicture {
@@ -126,6 +129,8 @@ img {
 .bio {
     justify-content: flex-start;
     padding-left: 20px;
+    border-left: solid 5px #313131;
+
 }
 
 /* .projectsheader {
@@ -138,22 +143,27 @@ img {
 .projects {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
     flex-grow: 1;
-    width: 80%;
+    /* width: 80%; */
+    padding-left: 20px;
+    border-left: solid 5px #313131;
 }
+
 .works {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    flex: 0 0 33.333%;
-    max-width: 33.333%;
+    /* flex: 0 0 33.333%;
+    max-width: 33.333%; */
+    margin: 2px;
 }
 
 .works img {
     max-width: 50%;
     height: 200px;
+    margin: 2px;
 }
 
 .bigworks img {
@@ -161,12 +171,12 @@ img {
     height: 300px;
 }
 
-.smallworks {
+/* .smallworks {
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-}
+} */
 /* .workslarge {
 
 } */
@@ -189,9 +199,9 @@ img {
     text-decoration: none;
 }
 /* resizing for different screen sizes. need work */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     nav, header, body {
         width: 100%;
         align-items: center;
   }
-}
+} */
