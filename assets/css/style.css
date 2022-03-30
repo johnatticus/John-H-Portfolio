@@ -42,6 +42,7 @@ figure {
 
 main {
     display: flex;
+    flex-direction: row;
     align-items: flex-start;
     /* height: 100vh; */
     padding: 10px;
@@ -97,8 +98,8 @@ p {
 footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: space-between; */
+    /* align-items: center; */
     padding: 10px;
     font-family: monospace;
     /* background-color: #313131;
@@ -229,6 +230,8 @@ img {
     flex-grow: 1;
     margin-left: 20px;
 }
+
+
 .contact a {
     font-size: large;
     color: black;
@@ -264,7 +267,7 @@ img {
         height: 100px;
     }
 
-    .sectionheader, main {
+    .sectionheader, main, footer {
         width: 100%;
         /* border-bottom: 0; */
         display: flex;
