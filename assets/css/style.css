@@ -40,21 +40,12 @@ figure {
     background-position: center;
 }
 
-main {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    /* height: 100vh; */
-    padding: 10px;
-}
-
 h1 {
     display: inline-block;
     font-size: 32px;
-    
 }
-    
-    /* changed to a class in h1. Not sure if correct */
+
+/* changed to a class in h1. Not sure if correct */
 h1 .middlename {
     color: #a0a0a0;
 }
@@ -75,9 +66,13 @@ ul {
 
 li {
     display: inline-block;
-    margin-left: 25px;
+    /* margin-left: 25px; */
 }
 
+.contact li {
+    display: block;
+    padding: 5px;
+}
 nav a {
     color: #ffffff;
     text-decoration: none;
@@ -95,6 +90,7 @@ nav a:hover {
 
 p {
     font-size: 16px;
+    padding-right: 10px;
 }
 
 /* footer section values, needs to be adjusted */
@@ -113,10 +109,6 @@ img {
     max-width: 100%;
 }
 
-/* .projects h2 {
-    text-decoration: none;
-} */
-
 .container {
     display: flex;
     flex-direction: column;
@@ -129,8 +121,8 @@ img {
     display: flex;
     padding-right: 25px;
     /* border-right: solid 5px #313131; */
-    min-width: 10%;
-    max-width: 12%;
+    min-width: 12%;
+    max-width: 20%;
     /* flex: 1 1 15%; */
 }
 
@@ -138,39 +130,16 @@ img {
     font-size: 24px;
 }
 
-.bio {
-    justify-content: flex-start;
-    /* padding-left: 20px; */
-    margin-left: 20px;
-    border-left: solid 5px #313131;
-
-}
-
-.bio p {
-    padding-left: 20px;
-}
-.mypicture {
-    background-image: url("../images/me.jpg");
-}
-
-/* .projectsheader {
-    display: flex;
-    padding-right: 10px;
-    border-right: solid 5px #313131;
-    flex: 1 1 15%;
-} */
-
-.about {
+main, .contact, .about {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    /* height: 100vh; */
     padding: 10px;
-    width: 100%;
-    height: 100%;
-
+    margin-bottom: 10px;
 }
 
-.projects {
+.projects, .bio, .contactlinks {
     display: flex;
     flex-wrap: wrap;
     /* flex-direction: column; */
@@ -181,6 +150,8 @@ img {
     /* width: 90%; */
     /* margin-left: 20px; */
     border-left: solid 5px #313131;
+    min-width: 88%;
+    max-width: 80%;
 }
 
 /* added opacity change when hovering over projects */
@@ -198,64 +169,31 @@ img {
     margin: 6px;
 }
 
-.bigworks {
-
-}
 .works img {
     height: 300px;
     width: 350px;
     /* object-fit: none; */
     margin: 2px;
     padding: 0 6px;
+    border-radius: 25px;
+
 }
 
 .bigworks img {
     width: 100%;
     height: 300px;
     padding: 0 6px;
-
+    border-radius: 25px;
 }
-
-/* .smallworks {
-    max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-} */
-/* .workslarge {
-
-} */
 
 .contactheader {
     display: flex;
-}
-
-.contact {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-items: flex-start;
-    /* flex-grow: 1; */
-    width: 100%;
-    height: 100%;
-    margin-left: 20px;
-    padding: 10px;
 }
 
 .contact a {
     font-size: large;
     color: black;
     text-decoration: none;
-}
-
-.contactlinks {
-    padding: 15px;
-    margin-right: 10px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    text-align: center;
-    border-left: 5px solid #313131;
 }
 
 /* makes links change color and bg color when hovering */
@@ -284,11 +222,17 @@ img {
     }
 
 
-    .about, .bio, .contact, .contactlinks, .sectionheader, main, footer, .projects {
-        width: 100%;
+    .about, .bio, .contact, .contactlinks, .sectionheader, main, .projects {
+        min-width: 100%;
         border-bottom: 0;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        padding-right: 10px;
+        margin: 0px;
+    }
+
+    p {
+        padding-right: 10px;
     }
 }
