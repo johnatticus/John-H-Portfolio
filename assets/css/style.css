@@ -206,6 +206,11 @@ main, .contact, .about {
     box-shadow: 2px 2px 2px black;
   }
 
+  .pic {
+      display: inline-block;
+      vertical-align: top;
+  }
+
 /* resizing for different screen sizes. need work */
 @media screen and (max-width: 768px) {
     body, header {
